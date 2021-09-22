@@ -27,6 +27,7 @@ const carro = {
         idade: 25
     }]
 }
+console.log(carro)
 
 carro.proprietario.endereço.numero = 1000
 //carro['proprietario']['endereço']['logradouro'] = 'Av Gigante'
