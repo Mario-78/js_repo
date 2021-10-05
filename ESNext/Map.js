@@ -23,5 +23,5 @@ console.log(chavesVariadas.has(123))
 console.log(chavesVariadas.size)
 
 chavesVariadas.set(123, 'a')
-chavesVariadas.set(123, 'b')
+chavesVariadas.set(123, 'b') //o valor 'b' vai sobre escrever o valor 'a', pois a chave não aceita repetição 
 console.log(chavesVariadas)
