@@ -1,0 +1,67 @@
+<style>
+    table {
+        border-collapse: collapse;
+    }
+    
+    th,
+    td {
+        padding: 10px;
+    }
+    
+    thead tr {
+        /*Aplica essa propriedade somente ao table-row(tr) que está dentro do*/
+        border-bottom: solid 3px #444;
+    }
+    
+    tbody tr:hover {
+        /*Aplica essa propriedade somente ao table-row(tr) que está dentro do tbody*/
+        background-color: #dedede;
+    }
+    
+    tfoot {
+        background-color: cadetblue;
+    }
+</style>
+<table>
+    <caption>Produtos</caption>
+    <!-- CAPTION dá o título a uma tabela-->
+    <thead>
+        <!-- THEAD é usado para acomodar o conteúdo do cabaçalho de uma tabela-->
+        <tr>>
+            <!-- TR é usado para acomodar o conteúdo da linha de uma tabela-->
+            <th>Produto</th>
+            <!-- TH é usado para nomear as colunas da tabela-->
+            <th>Preço</th>
+            <th>Quantidade</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <!-- Table body(TBODY) é usado para acomodar o conteúdo da tabela-->
+        <tr>
+            <td>iPad</td>
+            <!-- Table data(TD) é usado para acomodar os campos de uma linha da tabela-->
+            <td>5.999,99</td>
+            <td>5</td>
+            <td>29.999,95</td>
+        </tr>
+        <tr>
+            <td>Sansun s9</td>
+            <td>2.999,99</td>
+            <td>5</td>
+            <td>14.999,95</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <!-- Table footer(TFOOT) é usado para acomodar o conteúdo do rodapé de uma tabela-->
+        <tr>
+            <td colspan="3" rowspan="2">Total</td>
+            <!-- COLSPAN faz a união de colunas e ROWSPAN de linhas-->
+            <td>44.999,90</td>
+        </tr>
+        <tr>
+            <td>teste</td>
+        </tr>
+    </tfoot>
+</table>
